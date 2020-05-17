@@ -14,21 +14,21 @@
 
 <body>
     <!---------------------menu-------------------------------->
-    <div>
-        <nav>
-            <div class="toggle">
-                <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
+    <div class="main-header">
 
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="logo">LOGO</div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+        </ul>
 
     </div>
 
@@ -37,15 +37,7 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('nav ul').toggleClass('active');
-            })
-
-        })
-    </script>
+    <script src="main.js"></script>
 
 </body>
 
