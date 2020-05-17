@@ -22,6 +22,66 @@
   color: inherit;
 }
 
+.main-header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.main-header .nav-links .nav-link a {
+  margin: .2rem;
+  padding: 1rem .5rem;
+}
+
+.main-header .nav-links .nav-link a:hover {
+  background: white;
+  opacity: .2;
+}
+
+.main-header .menu-icon {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  padding: 26px 10px;
+}
+
+.main-header .menu-icon__line {
+  display: block;
+  position: relative;
+  background: #000;
+  height: 2px;
+  width: 20px;
+  border-radius: 4px;
+  -webkit-transition: background .8s ease;
+  transition: background .8s ease;
+}
+
+.main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: #000;
+  -webkit-transition: background .8s ease;
+  transition: background .8s ease;
+}
+
+.main-header .menu-icon__line::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-header .menu-icon__line::after {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.main-header .menu-btn {
+  display: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
