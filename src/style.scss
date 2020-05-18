@@ -3,6 +3,7 @@
 @import 'header';
 @import 'media';
 @import 'animations';
+@import 'banner';
 
 * {
    box-sizing: border-box;
@@ -20,5 +21,4 @@
     background-size: cover;
     opacity: .5;
     
-
 }
