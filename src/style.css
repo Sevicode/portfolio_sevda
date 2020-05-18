@@ -432,14 +432,15 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Dosis", sans-serif;
 }
 
-.text-msg {
-  width: 80%;
-  margin: 2rem auto;
-}
-
-.text-msg p {
-  margin: 1rem 0;
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 82, 53, 0.5)), to(rgba(47, 80, 72, 0.6))), url(/docs/apple.jpg) center no-repeat;
+  background: linear-gradient(rgba(80, 82, 53, 0.5), rgba(47, 80, 72, 0.6)), url(/docs/apple.jpg) center no-repeat;
+  background-size: cover;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */
