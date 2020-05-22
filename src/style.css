@@ -427,6 +427,160 @@
   }
 }
 
+/*---defining the animation for .banner ---*/
+@-webkit-keyframes moveToLeft {
+  from {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveToLeft {
+  from {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveToRight {
+  from {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  from {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*---defining Social Media keyframes----*/
+.banner {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  color: #000;
+  -webkit-animation-name: moveToLeft;
+          animation-name: moveToLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.banner span {
+  font-weight: 1000;
+  color: #eb8934;
+}
+
+.banner p {
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.social-media ul {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: socialMedia;
+          animation-name: socialMedia;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.social-media ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+.social-media ul li .fa {
+  font-size: 25px;
+  line-height: 50px;
+  -webkit-transition: .6s;
+  transition: .6s;
+  color: #000;
+}
+
+.social-media ul li .fa :hover {
+  color: #fff;
+}
+
+.social-media ul li a {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-media ul li a :hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.social-media ul li:nth-child(1) a:hover {
+  background-color: #0077B5;
+}
+
+.social-media ul li:nth-child(2) a:hover {
+  background-color: #aab8c2;
+}
+
+.social-media ul li:nth-child(3) a:hover {
+  background-color: #55acee;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -436,11 +590,19 @@
 }
 
 .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 100vw;
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 82, 53, 0.5)), to(rgba(47, 80, 72, 0.6))), url(/docs/apple.jpg) center no-repeat;
   background: linear-gradient(rgba(80, 82, 53, 0.5), rgba(47, 80, 72, 0.6)), url(/docs/apple.jpg) center no-repeat;
   background-size: cover;
-  opacity: .5;
+  overflow: hidden;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

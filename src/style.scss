@@ -4,6 +4,7 @@
 @import 'media';
 @import 'animations';
 @import 'banner';
+@import 'social';
 
 * {
    box-sizing: border-box;
@@ -14,11 +15,15 @@
 
 
 .main-container {
+    display: flex;
+    flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgba(80, 82, 53, 0.5), rgba(47, 80, 72, 0.6)),   
+    background:linear-gradient(rgba(80, 82, 53, 0.5), rgba(47, 80, 72, 0.6)),  
     url(/docs/apple.jpg) center no-repeat;
     background-size: cover;
-    opacity: .5;
-    
+    overflow: hidden;
+    position: relative;
 }
+    
+
