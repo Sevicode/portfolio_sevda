@@ -123,6 +123,25 @@
           transform: translateY(7px);
 }
 
+.logo {
+  margin-top: 30%;
+}
+
+.logo .name-surname {
+  font-family: 'Lobster', cursive;
+  font-size: 1.3em;
+}
+
+.logo .name-surname span {
+  font-family: 'Lobster', cursive;
+  color: #eb8934;
+}
+
+.logo .job-title {
+  font-size: 1em;
+  font-family: 'Lobster', cursive;
+}
+
 @media screen and (max-width: 767px) {
   .main-header .menu-icon {
     display: block;
@@ -599,8 +618,8 @@
           flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 82, 53, 0.5)), to(rgba(47, 80, 72, 0.6))), url(/docs/apple.jpg) center no-repeat;
-  background: linear-gradient(rgba(80, 82, 53, 0.5), rgba(47, 80, 72, 0.6)), url(/docs/apple.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 247, 238, 0.5)), to(rgba(55, 56, 56, 0.6))), url(/docs/laptop.jpg) center no-repeat;
+  background: linear-gradient(rgba(246, 247, 238, 0.5), rgba(55, 56, 56, 0.6)), url(/docs/laptop.jpg) center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
