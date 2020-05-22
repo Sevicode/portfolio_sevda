@@ -90,3 +90,33 @@
         rotate(90deg);
     }
 }
+
+/*---defining the animation for .banner ---*/
+
+@keyframes moveToLeft {
+    from {
+       transform: translateX(120px);
+       opacity: 0; 
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRight {
+    from {
+
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*---defining Social Media keyframes----*/
+
