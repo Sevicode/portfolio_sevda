@@ -1,0 +1,37 @@
+.contact-container {
+
+     display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)),
+    url(/docs/contact.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+}
+
+ .contact-text {
+        margin: 50% 10%;
+        text-align: center;
+        
+
+        p {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .fa,
+         a {
+            font-size: 18px;
+            margin-top: 7%;
+            text-decoration: none;
+            color: #000;
+
+            :hover {
+                color: blue;
+            }
+        }  
+
+    }

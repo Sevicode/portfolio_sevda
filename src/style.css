@@ -647,10 +647,55 @@
           flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background: url(/docs/low-op.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281))), url(/docs/newspaper.jpg) center no-repeat;
+  background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)), url(/docs/newspaper.jpg) center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
+
+.resume-container .social-media ul {
+  top: 20%;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281))), url(/docs/contact.jpg) center no-repeat;
+  background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)), url(/docs/contact.jpg) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-text {
+  margin: 50% 10%;
+  text-align: center;
+}
+
+.contact-text p {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-text .fa,
+.contact-text a {
+  font-size: 18px;
+  margin-top: 7%;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-text .fa :hover,
+.contact-text a :hover {
+  color: blue;
 }
 
 * {
@@ -671,8 +716,8 @@
           flex-direction: row;
   width: 100vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(246, 247, 238, 0.5)), to(rgba(55, 56, 56, 0.6))), url(/docs/laptop.jpg) center no-repeat;
-  background: linear-gradient(rgba(246, 247, 238, 0.5), rgba(55, 56, 56, 0.6)), url(/docs/laptop.jpg) center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281))), url(/docs/laptop.jpg) center no-repeat;
+  background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)), url(/docs/laptop.jpg) center no-repeat;
   background-size: cover;
   overflow: hidden;
   position: relative;
