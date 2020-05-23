@@ -1,0 +1,40 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background: 
+    url(/docs/apple.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    .logo {
+       
+       p {font-family: 'Lobster', cursive;
+        font-size:18px ;
+        
+    } 
+    }
+
+    .social-media {
+        
+        ul {
+            top: 35%;
+        }
+    }
+    
+}
+
+.my-picture {
+
+    img {
+        width: 150px;
+        height: 150px;
+        border: solid 2px rgba($color: #fff, $alpha: 0.5);
+        border-radius: 50%;
+        align-items: center;
+        position: absolute;
+        margin: 20% 30% 70% 30% ; 
+    }
+}
