@@ -7,10 +7,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 
     h1{
-        font-size: 2rem;
-        margin-bottom: 5px;  
+        font-size: 3em;
+        margin-bottom: 10px;  
         color: #000;
         animation-name: moveToLeft;
         animation-duration: 2s;
@@ -18,11 +19,11 @@
 
     span {
         font-weight: 1000;
-        color: #eb8934;
+        color:#d46002;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.5em;
         font-weight: 600;
         animation-name: moveToRight;
         animation-duration: 2s;
@@ -31,4 +32,16 @@
     
 
 
+}
+@media screen and (max-width: 767px) {
+
+    .banner {
+        h1{
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
 }

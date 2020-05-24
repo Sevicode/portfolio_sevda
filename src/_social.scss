@@ -1,9 +1,11 @@
-.social-media{
+.social-media-home,
+.social-media-contact,
+.social-media-about{
 
     ul {
         position: absolute; 
-        top: 50%;
-        left: 45%;
+        top: 48%;
+        left: 48.5%;
         padding: 0;
         margin: 0;
         transform: translate(-50%, -50%);
@@ -62,3 +64,31 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+
+.social-media-home
+ {
+
+        ul{
+
+        top: 50%;
+        left: 45%;
+        margin-right: 20%;
+
+        }
+        
+    }
+
+    .social-media-contact {
+
+
+        ul{
+
+        top: 60%;
+        left: 45%;
+        margin-right: 20%;
+
+        }
+    }
+
+}

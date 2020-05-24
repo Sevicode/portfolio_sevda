@@ -1,4 +1,4 @@
-.main-header{
+.main-header {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -106,24 +106,40 @@
 }
 
 .logo {
-    margin-top: 30%;
+    margin-top: 5%;
     
 
     .name-surname {
         font-family: 'Lobster', cursive;
-        font-size: 1.3em;
+        font-size: 2.3em;
 
         span {
             font-family: 'Lobster', cursive;
-            color: #eb8934;
+            color: #d46002;
         }
 
     }
 
     .job-title {
-            font-size: 1em;
+            font-size: 1.1em;
             font-family: 'Lobster', cursive;
+            color: #3d3b3b;
+            letter-spacing: 0.4em;
         }
 
 
+}
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+
+    margin-top: 30%;
+
+    .name-surname {
+        font-size: 1.5em;
+    }
+
+   
+    }
 }

@@ -124,22 +124,33 @@
 }
 
 .logo {
-  margin-top: 30%;
+  margin-top: 5%;
 }
 
 .logo .name-surname {
   font-family: 'Lobster', cursive;
-  font-size: 1.3em;
+  font-size: 2.3em;
 }
 
 .logo .name-surname span {
   font-family: 'Lobster', cursive;
-  color: #eb8934;
+  color: #d46002;
 }
 
 .logo .job-title {
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: 'Lobster', cursive;
+  color: #3d3b3b;
+  letter-spacing: 0.4em;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    margin-top: 30%;
+  }
+  .logo .name-surname {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -180,7 +191,7 @@
     width: 100vw;
     height: 100vh;
     font-size: 2rem;
-    color: #fff;
+    color: #f3c096;
     background: #272727;
     -webkit-transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
     transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
@@ -507,11 +518,12 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .banner h1 {
-  font-size: 2rem;
-  margin-bottom: 5px;
+  font-size: 3em;
+  margin-bottom: 10px;
   color: #000;
   -webkit-animation-name: moveToLeft;
           animation-name: moveToLeft;
@@ -521,11 +533,11 @@
 
 .banner span {
   font-weight: 1000;
-  color: #eb8934;
+  color: #d46002;
 }
 
 .banner p {
-  font-size: 1rem;
+  font-size: 1.5em;
   font-weight: 600;
   -webkit-animation-name: moveToRight;
           animation-name: moveToRight;
@@ -533,10 +545,21 @@
           animation-duration: 2s;
 }
 
-.social-media ul {
+@media screen and (max-width: 767px) {
+  .banner h1 {
+    font-size: 2em;
+  }
+  .banner p {
+    font-size: 1em;
+  }
+}
+
+.social-media-home ul,
+.social-media-contact ul,
+.social-media-about ul {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  top: 48%;
+  left: 48.5%;
   padding: 0;
   margin: 0;
   -webkit-transform: translate(-50%, -50%);
@@ -552,12 +575,16 @@
           animation-delay: 3s;
 }
 
-.social-media ul li {
+.social-media-home ul li,
+.social-media-contact ul li,
+.social-media-about ul li {
   list-style: none;
   margin: 0 40px;
 }
 
-.social-media ul li .fa {
+.social-media-home ul li .fa,
+.social-media-contact ul li .fa,
+.social-media-about ul li .fa {
   font-size: 25px;
   line-height: 50px;
   -webkit-transition: .6s;
@@ -565,11 +592,15 @@
   color: #000;
 }
 
-.social-media ul li .fa :hover {
+.social-media-home ul li .fa :hover,
+.social-media-contact ul li .fa :hover,
+.social-media-about ul li .fa :hover {
   color: #fff;
 }
 
-.social-media ul li a {
+.social-media-home ul li a,
+.social-media-contact ul li a,
+.social-media-about ul li a {
   position: absolute;
   display: block;
   width: 50px;
@@ -583,21 +614,42 @@
           box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 
-.social-media ul li a :hover {
+.social-media-home ul li a :hover,
+.social-media-contact ul li a :hover,
+.social-media-about ul li a :hover {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
 }
 
-.social-media ul li:nth-child(1) a:hover {
+.social-media-home ul li:nth-child(1) a:hover,
+.social-media-contact ul li:nth-child(1) a:hover,
+.social-media-about ul li:nth-child(1) a:hover {
   background-color: #0077B5;
 }
 
-.social-media ul li:nth-child(2) a:hover {
+.social-media-home ul li:nth-child(2) a:hover,
+.social-media-contact ul li:nth-child(2) a:hover,
+.social-media-about ul li:nth-child(2) a:hover {
   background-color: #aab8c2;
 }
 
-.social-media ul li:nth-child(3) a:hover {
+.social-media-home ul li:nth-child(3) a:hover,
+.social-media-contact ul li:nth-child(3) a:hover,
+.social-media-about ul li:nth-child(3) a:hover {
   background-color: #55acee;
+}
+
+@media screen and (max-width: 767px) {
+  .social-media-home ul {
+    top: 50%;
+    left: 45%;
+    margin-right: 20%;
+  }
+  .social-media-contact ul {
+    top: 60%;
+    left: 45%;
+    margin-right: 20%;
+  }
 }
 
 .about-container {
@@ -616,25 +668,39 @@
   position: relative;
 }
 
-.about-container .logo p {
-  font-family: 'Lobster', cursive;
-  font-size: 18px;
-}
-
-.about-container .social-media ul {
-  top: 35%;
+.about-container .social-media-about ul {
+  margin: 5% auto;
 }
 
 .my-picture img {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border: solid 2px rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  margin: 20% 30% 70% 30%;
+  top: 0;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about-text {
+  position: relative;
+  margin: 40% 20%;
+}
+
+@media screen and (max-width: 767px) {
+  .about-container .logo .job-title {
+    font-size: 0.8em;
+  }
+  .about-container .my-picture img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .resume-container {
@@ -662,10 +728,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281))), url(/docs/contact.jpg) center no-repeat;
@@ -676,26 +742,35 @@
 }
 
 .contact-text {
-  margin: 50% 10%;
+  margin: 20% 10%;
   text-align: center;
 }
 
 .contact-text p {
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Roboto', sans-serif;
 }
 
 .contact-text .fa,
 .contact-text a {
-  font-size: 18px;
-  margin-top: 7%;
+  font-size: 20px;
+  margin-top: 5%;
   text-decoration: none;
   color: #000;
 }
 
-.contact-text .fa :hover,
-.contact-text a :hover {
-  color: blue;
+@media screen and (max-width: 767px) {
+  .contact-text {
+    margin: 50% 10%;
+    text-align: center;
+  }
+  .contact-text .fa,
+  .contact-text a {
+    font-size: 20px;
+    margin-top: 15%;
+    text-decoration: none;
+    color: #000;
+  }
 }
 
 * {
@@ -703,7 +778,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Dosis", sans-serif;
 }
 
 .main-container {
