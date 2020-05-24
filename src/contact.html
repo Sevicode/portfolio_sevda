@@ -9,41 +9,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Sevda Amini Uhde | Web Developer</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/favicon.png" type="image/png" />
 </head>
 
-<body>
-    <!---------------------menu-------------------------------->
-    <div>
-        <nav>
-            <div class="toggle">
-                <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
+<body class="contact-container">
 
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="main-header">
+
+        <div class="logo">
+
+            <p class="name-surname"><span>Sevda</span> Amini-Uhde</p>
+            <p class="job-title">Full-Stack Developer</p>
+        </div>
+
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+        </ul>
 
     </div>
+    <div class="contact-text">
+        <p>Interested in working together? <br>send me an email!</p>
+        <i class="fa fa-envelope" aria-hidden="true"></i><a href="me@sevda.com.au"> me@sevda.com.au</a>
+    </div>
 
-    <!------------Footer-------------->
-    <div></div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('nav ul').toggleClass('active');
-            })
-
-        })
-    </script>
+    <div class="social-media-contact">
+        <ul>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
 
 </body>
 

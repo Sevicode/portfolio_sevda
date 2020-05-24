@@ -8,48 +8,61 @@
     <meta name="description" content="Sevda Amini Full-Stack Web Developer">
     <link rel="stylesheet" href="style.css">
     <title>Sevda Amini Uhde | Web Developer</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!---------------------menu-------------------------------->
-    <div>
-        <nav>
-            <div class="toggle">
-                <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
+<body class="main-container">
 
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="main-header">
 
-    </div>
-    <!---------------landing page-picture section-------------------->
-    <div>
+        <div class="logo">
 
-    </div>
+            <p class="name-surname"><span>Sevda</span> Amini-Uhde</p>
+            <p class="job-title">Full-Stack Developer</p>
+        </div>
 
-    <!---------------Social Media Icons------------------------------>
-    <div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="menu-icon__line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li class="nav-link"><a href="index.html">Home</a></li>
+            <li class="nav-link"><a href="about.html">About</a></li>
+            <li class="nav-link"><a href="resume.html">Resume</a></li>
+            <li class="nav-link"><a href="blog.html">Blog</a></li>
+            <li class="nav-link"><a href="contact.html">Contact</a></li>
+        </ul>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('nav ul').toggleClass('active');
-            })
+    <div class="banner">
+        <h1>Hi, I'm <span>Sevda</span></h1>
+        <p>I'm a Full-Stack Developer</p>
 
-        })
-    </script>
+
+
+        <!--<button type="button" class="left-btn"><a href="#"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a></button>
+        <button type="button" class="middle-btn"><a href="#"><i class="fa fa-github"
+                    aria-hidden="true"></i></a></button>
+        <button type="button" class="right-btn"><a href="#"><i class="fa fa-twitter"
+                    aria-hidden="true"></i></a></button>-->
+    </div>
+
+
+    <div class="social-media-home">
+        <ul>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+
+    <script src="main.js"></script>
 
 </body>
 

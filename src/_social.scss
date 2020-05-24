@@ -1,0 +1,94 @@
+.social-media-home,
+.social-media-contact,
+.social-media-about{
+
+    ul {
+        position: absolute; 
+        top: 48%;
+        left: 48.5%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        display: flex;
+        animation-name: socialMedia;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        
+        
+
+        li {
+
+            list-style: none;
+            margin: 0 40px;
+
+            .fa {
+                font-size: 25px;
+                line-height: 50px;
+                transition: .6s;
+                color: #000;
+
+                :hover{
+                    color: #fff;
+                }
+            }
+
+            a {
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                text-align:center;
+                transition: .6s;
+                box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+
+                :hover{
+                    transform: translate(0, -10px);
+                }
+
+            }
+
+           
+        }
+    }
+
+    ul li:nth-child(1) a:hover {
+       background-color: #0077B5;;
+    }
+     ul li:nth-child(2) a:hover {
+       background-color: #aab8c2;;
+    }
+     ul li:nth-child(3) a:hover {
+       background-color: #55acee;;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+.social-media-home
+ {
+
+        ul{
+
+        top: 50%;
+        left: 45%;
+        margin-right: 20%;
+
+        }
+        
+    }
+
+    .social-media-contact {
+
+
+        ul{
+
+        top: 60%;
+        left: 45%;
+        margin-right: 20%;
+
+        }
+    }
+
+}

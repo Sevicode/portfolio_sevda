@@ -1,0 +1,20 @@
+.resume-container {
+
+   display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)),
+    url(/docs/newspaper.jpg) center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    .social-media {
+        
+        ul {
+            top: 20%;
+        }
+}
+}
+
