@@ -5,7 +5,7 @@
     width: 100vw;
     height: 100vh;
     background:linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)),
-    url(/docs/newspaper.jpg) center no-repeat;
+    url(/docs/newspaper.png) center no-repeat;
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -16,5 +16,16 @@
             top: 20%;
         }
 }
+
+
+
+iframe {
+    width: 1000px;
+    height: 700;
+   margin: 10% 25% 2% 27%;
+     
+}
+
+
 }
 
