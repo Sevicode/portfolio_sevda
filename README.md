@@ -49,6 +49,18 @@ Navigation menu on top right side of each page of the website makes it accessibl
 
 ![sitemap](docs/sitemap.png)
 
+## Wireframe Muckups
+
+### Mobile Wireframes
+
+![Mobile wireframes](/docs/mobile.png)
+
+### Tablet Wireframes
+
+### Desktop Wireframes
+
+
+
 ## Screenshots
 
 
