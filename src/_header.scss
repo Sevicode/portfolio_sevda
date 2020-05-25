@@ -18,6 +18,7 @@
     .nav-links {
         display: flex;
         list-style: none;
+        font-family: 'Roboto', sans-serif;
 
         .nav-link {
            transition:
@@ -130,16 +131,18 @@
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 
     .logo {
 
     margin-top: 30%;
 
     .name-surname {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
-   
+    .job-title {
+        font-size: 0.8;
+    }
     }
 }
