@@ -1,5 +1,5 @@
 # **Portfolio** - Sevda Amini-Uhde
-![insert picture of homepage here]()
+
 * [www.sevda.com.au](www.sevda.com.au)
 * [Link to Github repository](https://github.com/Sevicode/portfolio_sevda)
 
@@ -64,6 +64,20 @@ Navigation menu on top right side of each page of the website makes it accessibl
 
 ## Screenshots
 
+**Mobile**
+
+![](/docs/sc-m.png)
+
+**Desktop**
+
+![](/docs/home-dk.png)
+
+![](/docs/about.png)
+
+![](/docs/resume.png)
+
+![](/docs/blog.png)
+![](/docs/contact-dk.png)
 
 
 ## Tech stack
