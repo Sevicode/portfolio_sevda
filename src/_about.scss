@@ -44,11 +44,33 @@
     }
 
        .about-text {
-        position: relative;
-        margin: 40% 20%;
-
+    
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+        margin: 35% 5% 10% 5%;
+        padding: 1% 1%;
+        h1,
+        h2,
+        h3,
+        h4 {
+            
+            font-size: 20px;
+        }
         
     }
+
+        .introduction,
+        .technical-skills,
+        .soft-skills,
+        .interests
+         {
+            padding: 3% 2% 5% 2%;
+            
+        }
+
+        
+
 
   
 

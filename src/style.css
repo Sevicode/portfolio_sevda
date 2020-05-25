@@ -32,6 +32,7 @@
 }
 
 .main-header .nav-links .nav-link {
+  font-family: 'Roboto', sans-serif;
   -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.4s ease-in-out, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -689,8 +690,30 @@
 }
 
 .about-text {
-  position: relative;
-  margin: 40% 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  margin: 35% 5% 10% 5%;
+  padding: 1% 1%;
+}
+
+.about-text h1,
+.about-text h2,
+.about-text h3,
+.about-text h4 {
+  font-size: 20px;
+}
+
+.introduction,
+.technical-skills,
+.soft-skills,
+.interests {
+  padding: 3% 2% 5% 2%;
 }
 
 @media screen and (max-width: 767px) {
