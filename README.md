@@ -1,7 +1,7 @@
 # **Portfolio** - Sevda Amini-Uhde
 ![insert picture of homepage here]()
 * [www.sevda.com.au](www.sevda.com.au)
-* [Link to Github depository](https://github.com/Sevicode/portfolio_sevda)
+* [Link to Github repository](https://github.com/Sevicode/portfolio_sevda)
 
 ## Purpose
 
