@@ -29,10 +29,10 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-header .nav-links .nav-link {
-  font-family: 'Roboto', sans-serif;
   -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.4s ease-in-out, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -145,12 +145,15 @@
   letter-spacing: 0.4em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .logo {
     margin-top: 30%;
   }
   .logo .name-surname {
-    font-size: 1.5em;
+    font-size: 1.8em;
+  }
+  .logo .job-title {
+    font-size: 0.8;
   }
 }
 
@@ -690,16 +693,12 @@
 }
 
 .about-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   font-family: 'Roboto', sans-serif;
-  margin: 35% 5% 10% 5%;
-  padding: 1% 1%;
+  margin: 45% 5% 10% 5%;
 }
 
 .about-text h1,
@@ -716,13 +715,25 @@
   padding: 3% 2% 5% 2%;
 }
 
-@media screen and (max-width: 767px) {
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
   .about-container .logo .job-title {
     font-size: 0.8em;
   }
   .about-container .my-picture img {
     width: 200px;
     height: 200px;
+  }
+  .about-text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
   }
 }
 
@@ -743,14 +754,92 @@
   position: relative;
 }
 
-.resume-container .social-media ul {
-  top: 20%;
+.resume-container .social-media-resume ul {
+  margin: 5% auto 0 auto;
 }
 
-.resume-container iframe {
-  width: 1000px;
-  height: 700;
-  margin: 10% 25% 2% 27%;
+.resume-link {
+  margin: 20% 10% 0 30%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume-link p {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.resume-link a {
+  font-size: 18px;
+  color: black;
+  background-color: #f7c709;
+  border: solid 3px orange;
+  border-radius: 10%;
+  padding: 2%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .resume-link {
+    margin: 50% 15% 0 15%;
+  }
+  .resume-link p {
+    font-size: 20px;
+    padding-bottom: 10%;
+  }
+  .social-media-resume ul {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    padding: 0;
+    margin: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation-name: socialMedia;
+            animation-name: socialMedia;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .social-media-resume ul li {
+    list-style: none;
+    margin: 0 40px;
+  }
+  .social-media-resume ul li .fa {
+    font-size: 25px;
+    line-height: 50px;
+    -webkit-transition: .6s;
+    transition: .6s;
+    color: #000;
+  }
+  .social-media-resume ul li .fa :hover {
+    color: #fff;
+  }
+  .social-media-resume ul li a {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    -webkit-transition: .6s;
+    transition: .6s;
+    -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+  }
+  .social-media-resume ul li a :hover {
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+  }
+  .resume-container .logo .job-title {
+    font-size: 0.8em;
+  }
 }
 
 .contact-container {
@@ -788,6 +877,10 @@
   color: #000;
 }
 
+.social-media-contact ul {
+  top: 60%;
+}
+
 @media screen and (max-width: 767px) {
   .contact-text {
     margin: 50% 10%;
@@ -799,6 +892,9 @@
     margin-top: 15%;
     text-decoration: none;
     color: #000;
+  }
+  .logo .job-title {
+    font-size: 0.8em;
   }
 }
 

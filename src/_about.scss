@@ -7,7 +7,7 @@
     url(/docs/apple.jpg) center no-repeat;
     background-size: cover;
     overflow: hidden;
-    position: relative;
+   position: relative;
 
     
 
@@ -31,7 +31,7 @@
         border: solid 2px rgba($color: #fff, $alpha: 0.5);
         border-radius: 50%;
         align-items: center;
-           position: absolute;
+        position: absolute;
         top: 0;
         bottom: 20%;
         left: 0;
@@ -45,11 +45,12 @@
 
        .about-text {
     
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
         font-family: 'Roboto', sans-serif;
-        margin: 35% 5% 10% 5%;
-        padding: 1% 1%;
+        margin: 45% 5% 10% 5%;
+        
+       
         h1,
         h2,
         h3,
@@ -69,6 +70,10 @@
             
         }
 
+        .portfolio {
+            display: flex;
+        }
+
         
 
 
@@ -78,7 +83,7 @@
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 
     .about-container {
         .logo {
@@ -98,6 +103,8 @@
      }
      }
     }
-
-
+    .about-text{
+display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
 }

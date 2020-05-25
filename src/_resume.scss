@@ -10,22 +10,113 @@
     overflow: hidden;
     position: relative;
 
-    .social-media {
+    .social-media-resume {
         
         ul {
-            top: 20%;
+            margin: 5% auto 0 auto;
         }
 }
 
 
-
-iframe {
-    width: 1000px;
-    height: 700;
-   margin: 10% 25% 2% 27%;
-     
 }
 
 
-}
+.resume-link {
+    
+   margin: 20% 10% 0 30%;
+   text-align: center;
+   font-family: 'Roboto', sans-serif;
 
+
+   p{
+       font-size: 25px;
+       font-weight: bold;
+       padding-bottom: 5%;
+   }
+
+   a {
+       font-size: 18px ;
+       color: black;
+       background-color: rgb(247, 199, 9);
+       border: solid 3px orange;
+       border-radius: 10%;
+       padding: 2%;
+       font-weight: bold;
+       
+   }
+
+   
+}
+@media screen and (max-width: 800px) {
+
+    .resume-link{
+        margin: 50% 15% 0 15%;
+
+        p{
+            font-size: 20px;
+            padding-bottom: 10%;
+        }
+    }
+
+    .social-media-resume ul {
+        position: absolute; 
+        top: 80%;
+        left: 45%;
+        padding: 0;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        display: flex;
+        animation-name: socialMedia;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        
+        
+
+        li {
+
+            list-style: none;
+            margin: 0 40px;
+
+            .fa {
+                font-size: 25px;
+                line-height: 50px;
+                transition: .6s;
+                color: #000;
+
+                :hover{
+                    color: #fff;
+                }
+            }
+
+            a {
+                position: absolute;
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                text-align:center;
+                transition: .6s;
+                box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+
+                :hover{
+                    transform: translate(0, -10px);
+                }
+
+            }
+
+           
+        }
+    }
+
+    .resume-container {
+
+        .logo{
+
+            .job-title {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+}

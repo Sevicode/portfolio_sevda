@@ -18,9 +18,9 @@
     .nav-links {
         display: flex;
         list-style: none;
+        font-family: 'Roboto', sans-serif;
 
         .nav-link {
-            font-family: 'Roboto', sans-serif;
            transition:
            opacity .4s ease-in-out,
            transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -131,16 +131,18 @@
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
 
     .logo {
 
     margin-top: 30%;
 
     .name-surname {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
-   
+    .job-title {
+        font-size: 0.8;
+    }
     }
 }

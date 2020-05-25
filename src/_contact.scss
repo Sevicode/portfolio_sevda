@@ -36,6 +36,16 @@
     
         }  
 
+        .social-media-contact {
+
+
+        ul{
+
+        top: 60%;
+
+        }
+    }
+
     @media screen and (max-width: 767px) {
 
         .contact-text {
@@ -52,4 +62,10 @@
 
     
         }  
+
+        .logo {
+            .job-title {
+                font-size: 0.8em;
+            }
+        }
     }
