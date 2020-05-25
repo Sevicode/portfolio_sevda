@@ -698,7 +698,7 @@
   -ms-grid-columns: 25% 25% 25% 25%;
       grid-template-columns: 25% 25% 25% 25%;
   font-family: 'Roboto', sans-serif;
-  margin: 45% 5% 10% 5%;
+  margin: 10% 5% 10% 5%;
 }
 
 .about-text h1,
@@ -754,8 +754,59 @@
   position: relative;
 }
 
-.resume-container .social-media-resume ul {
-  margin: 5% auto 0 auto;
+.social-media-resume ul {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: socialMedia;
+          animation-name: socialMedia;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.social-media-resume ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+.social-media-resume ul li .fa {
+  font-size: 25px;
+  line-height: 50px;
+  -webkit-transition: .6s;
+  transition: .6s;
+  color: #000;
+}
+
+.social-media-resume ul li .fa :hover {
+  color: #fff;
+}
+
+.social-media-resume ul li a {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-media-resume ul li a :hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
 }
 
 .resume-link {
@@ -787,55 +838,6 @@
   .resume-link p {
     font-size: 20px;
     padding-bottom: 10%;
-  }
-  .social-media-resume ul {
-    position: absolute;
-    top: 80%;
-    left: 45%;
-    padding: 0;
-    margin: 0;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-animation-name: socialMedia;
-            animation-name: socialMedia;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
-  }
-  .social-media-resume ul li {
-    list-style: none;
-    margin: 0 40px;
-  }
-  .social-media-resume ul li .fa {
-    font-size: 25px;
-    line-height: 50px;
-    -webkit-transition: .6s;
-    transition: .6s;
-    color: #000;
-  }
-  .social-media-resume ul li .fa :hover {
-    color: #fff;
-  }
-  .social-media-resume ul li a {
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    -webkit-transition: .6s;
-    transition: .6s;
-    -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
-  }
-  .social-media-resume ul li a :hover {
-    -webkit-transform: translate(0, -10px);
-            transform: translate(0, -10px);
   }
   .resume-container .logo .job-title {
     font-size: 0.8em;
@@ -895,6 +897,103 @@
   }
   .logo .job-title {
     font-size: 0.8em;
+  }
+}
+
+.blog-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281)));
+  background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281));
+  background-size: auto;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.blogs {
+  font-family: 'Roboto', sans-serif;
+  margin: 10% 20% 0 20%;
+  padding-bottom: 5%;
+  position: absolute;
+}
+
+.blogs h1 {
+  text-align: center;
+}
+
+.blogs p {
+  padding-bottom: 5%;
+}
+
+.social-media-blog
+ul {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  padding: 0;
+  margin: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: socialMedia;
+          animation-name: socialMedia;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.social-media-blog
+ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+.social-media-blog
+ul li .fa {
+  font-size: 25px;
+  line-height: 50px;
+  -webkit-transition: .6s;
+  transition: .6s;
+  color: #000;
+}
+
+.social-media-blog
+ul li .fa :hover {
+  color: #fff;
+}
+
+.social-media-blog
+ul li a {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-media-blog
+ul li a :hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+@media screen and (max-width: 800px) {
+  .blogs {
+    margin: 30% 2% 0 2%;
   }
 }
 

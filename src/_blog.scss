@@ -1,22 +1,33 @@
-.resume-container {
-
-   display: flex;
-    flex-direction: row;
+.blog-container {
+    background:linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281));
+    background-size: auto;
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)),
-    url(/docs/newspaper.png) center no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-
- 
-
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.social-media-resume ul {
+.blogs {
+
+    font-family: 'Roboto', sans-serif;
+    margin: 10% 20% 0 20%;
+    padding-bottom: 5%;
+    position: absolute;
+
+    h1{
+        text-align: center;
+    }
+
+    p {
+        padding-bottom: 5%;
+    }
+}
+
+.social-media-blog
+ ul {
         position: absolute; 
-        top: 80%;
+        top: 90%;
         left: 45%;
         padding: 0;
         margin: 0;
@@ -65,54 +76,9 @@
         }
     }
 
+    @media screen and (max-width: 800px) {
 
-
-.resume-link {
-    
-   margin: 20% 10% 0 30%;
-   text-align: center;
-   font-family: 'Roboto', sans-serif;
-
-
-   p{
-       font-size: 25px;
-       font-weight: bold;
-       padding-bottom: 5%;
-   }
-
-   a {
-       font-size: 18px ;
-       color: black;
-       background-color: rgb(247, 199, 9);
-       border: solid 3px orange;
-       border-radius: 10%;
-       padding: 2%;
-       font-weight: bold;
-       
-   }
-
-   
-}
-@media screen and (max-width: 800px) {
-
-    .resume-link{
-        margin: 50% 15% 0 15%;
-
-        p{
-            font-size: 20px;
-            padding-bottom: 10%;
+        .blogs {
+           margin: 30% 2% 0 2%;
         }
     }
-
-    
-    .resume-container {
-
-        .logo{
-
-            .job-title {
-                font-size: 0.8em;
-            }
-        }
-    }
-
-}
