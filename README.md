@@ -55,9 +55,10 @@ Navigation menu on top right side of each page of the website makes it accessibl
 
 ![Mobile wireframes](/docs/mobile.png)
 
-### Tablet Wireframes
 
 ### Desktop Wireframes
+
+![](/docs/desktop.png)
 
 
 
