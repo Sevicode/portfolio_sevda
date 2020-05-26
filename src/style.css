@@ -656,24 +656,15 @@
   }
 }
 
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100vw;
+body {
+  /*display: flex;
+    flex-direction: row;*/
+  /*width: 100vw;*/
   height: 100vh;
   background: url(/docs/apple.jpg) center no-repeat;
   background-size: cover;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
-}
-
-.about-container .social-media-about ul {
-  margin: 5% auto;
 }
 
 .my-picture img {
@@ -685,20 +676,38 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 0;
-  bottom: 20%;
+  top: 5em;
+  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.social-media-about ul {
+  margin: 2% auto;
 }
 
 .about-text {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   font-family: 'Roboto', sans-serif;
-  margin: 10% 5% 10% 5%;
+  position: absolute;
+  top: 35em;
+  right: 2em;
+  bottom: 10;
+  left: 2em;
+  margin: 0 auto;
 }
 
 .about-text h1,
@@ -712,13 +721,42 @@
 .technical-skills,
 .soft-skills,
 .interests {
-  padding: 3% 2% 5% 2%;
+  display: block;
 }
 
 .portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: grid;
+            grid-template-rows: 1fr;*/
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 45em;
+  bottom: 0;
+  left: 5em;
+  right: 5em;
+}
+
+.portfolio .portfolio-title {
+  text-align: center;
+  margin: 2% auto 2% auto;
+}
+
+.project-one,
+.project-two,
+.project-three,
+.project-four {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -728,12 +766,6 @@
   .about-container .my-picture img {
     width: 200px;
     height: 200px;
-  }
-  .about-text {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
   }
 }
 

@@ -1,26 +1,14 @@
-.about-container {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+body {
+    /*display: flex;
+    flex-direction: row;*/
+    /*width: 100vw;*/
     height: 100vh;
     background: 
     url(/docs/apple.jpg) center no-repeat;
     background-size: cover;
-    overflow: hidden;
+    /*overflow: hidden;*/
    position: relative;
-
-    
-
-    .social-media-about {
         
-        ul {
-            
-            margin: 5% auto;
-            
-            
-        }
-    }
-    
 }
 
 .my-picture {
@@ -32,25 +20,46 @@
         border-radius: 50%;
         align-items: center;
         position: absolute;
-        top: 0;
-        bottom: 20%;
+        top: 5em;
+        bottom: 0;
         left: 0;
         right: 0;
-        margin: auto; 
+        margin: 0 auto; 
     }
 
 
 
+    }
+
+
+    
+    .social-media-about {
+        
+        ul {
+            
+            margin: 2% auto;
+            
+            
+        }
     }
 
        .about-text {
     
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        font-family: 'Roboto', sans-serif;
-        margin: 10% 5% 10% 5%;
-        
-       
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 35em;
+    right: 2em;
+    bottom: 10;
+    left: 2em;
+    margin: 0 auto ;
+ 
         h1,
         h2,
         h3,
@@ -66,12 +75,41 @@
         .soft-skills,
         .interests
          {
-            padding: 3% 2% 5% 2%;
+            display: block;
             
         }
 
         .portfolio {
-            display: flex;
+            /*display: grid;
+            grid-template-rows: 1fr;*/
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 45em;
+            bottom: 0;
+            left: 5em;
+            right: 5em;
+           
+
+            .portfolio-title{
+                text-align: center;
+                margin: 2% auto 2% auto;
+            }
+            
+        }
+
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four {
+
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-rows: 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            
         }
 
         
@@ -103,8 +141,5 @@
      }
      }
     }
-    .about-text{
-display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
+   
 }
