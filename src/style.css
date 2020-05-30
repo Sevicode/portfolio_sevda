@@ -30,6 +30,7 @@
   display: flex;
   list-style: none;
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 .main-header .nav-links .nav-link {
@@ -656,14 +657,16 @@
   }
 }
 
-body {
+.about-container {
   /*display: flex;
     flex-direction: row;*/
   /*width: 100vw;*/
-  height: 100vh;
-  background: url(/docs/apple.jpg) center no-repeat;
+  min-height: 100vh;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281))), url(/docs/apple.jpg) center no-repeat;
+  background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281)), url(/docs/apple.jpg) center no-repeat;
   background-size: cover;
-  /*overflow: hidden;*/
+  overflow: auto;
   position: relative;
 }
 
@@ -693,19 +696,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
   -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  -ms-grid-rows: (1fr)[1];
-      grid-template-rows: repeat(1, 1fr);
+  /*grid-template-rows: repeat(1, 1fr);*/
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   font-family: 'Roboto', sans-serif;
   position: absolute;
   top: 35em;
   right: 2em;
-  bottom: 10;
+  bottom: 5em;
   left: 2em;
   margin: 0 auto;
 }
@@ -724,6 +724,7 @@ body {
   display: block;
 }
 
+/*---------------------------------------Portfolio section styling ------------------------------*/
 .portfolio {
   /*display: grid;
             grid-template-rows: 1fr;*/
@@ -743,20 +744,28 @@ body {
 .project-one,
 .project-two,
 .project-three,
-.project-four {
+.project-four,
+.project-five {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(2, 1fr);*/
   -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
@@ -932,26 +941,26 @@ body {
   }
 }
 
-.blog-container {
+body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(216, 212, 204, 0.014)), to(rgba(53, 35, 3, 0.281)));
   background: linear-gradient(rgba(216, 212, 204, 0.014), rgba(53, 35, 3, 0.281));
-  background-size: auto;
-  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  /*width: 100vw;*/
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  /*display: flex;
+    flex-direction: row;*/
 }
 
 .blogs {
   font-family: 'Roboto', sans-serif;
-  margin: 10% 20% 0 20%;
+  /*margin: 10% 20% 0 20%;*/
   padding-bottom: 5%;
   position: absolute;
+  top: 10em;
+  right: 2em;
+  left: 2em;
+  bottom: 5em;
 }
 
 .blogs h1 {
