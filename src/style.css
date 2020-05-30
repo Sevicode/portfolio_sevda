@@ -1,4 +1,136 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.header {
+  position: fixed;
+  /* Fix positioning anchors the icon on the top */
+  width: 100%;
+  z-index: 3;
+  /* to keep the menu above the content, when we scroll above content will scroll underneath*/
+  /*animating when menu is checked*/
+}
+
+.header .nav-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*removes the bulet style from the menu*/
+  overflow: hidden;
+  clear: both;
+  /*forces the menu bellow the left floated logo*/
+  max-height: 0;
+  -webkit-transition: max-height .2s ease-in-out;
+  transition: max-height .2s ease-in-out;
+  text-align: center;
+}
+
+.header .nav-links .nav-link a {
+  display: block;
+  /* To be able to define padding and margin 
+                                    so clicking on menu items will be easier*/
+  padding: 20px;
+  border-right: 1px solid #aaa;
+  /*add a border as a divider
+                                                between menu icons in desktop view*/
+  text-decoration: none;
+  /*removing under line*/
+}
+
+.header .nav-links .nav-link a:hover {
+  background-color: #ddd;
+}
+
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  /*the reason for giving the relative position:
+                            because menu-icon acts as a parent element for span
+                            and we want to be able to move the child element and
+                            do work on it so relative positioning will allow us this
+                            then we gibe absolute positioning to the child element*/
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  /*choosing block to be able to give some width and height*/
+  height: 2px;
+  width: 18px;
+  position: relative;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+  /*Adding psudoelements here to add a top and botton line
+                on created nav icon*/
+}
+
+.header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after {
+  background: #333;
+  content: "";
+  /*Allow us to add bars with css programatically     */
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .nav-links {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.header .logo {
+  float: left;
+  display: block;
+  font-size: 2em;
+  padding: 5px 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .header .nav-links {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .nav-links .nav-link {
+    float: left;
+  }
+  .header .nav-links .nav-link a {
+    padding: 20px 30px;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
 .banner {
   width: 100%;
   position: absolute;
