@@ -16,8 +16,10 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
         overflow: hidden;
         clear: both; /*forces the menu bellow the left floated logo*/
         max-height: 0;
-        transition: max-height .2s ease-in-out;
+        transition: max-height .5s ease-in-out;
         text-align: center;
+        background: #fff;
+        opacity: .9;
 
 
         .nav-link{
@@ -133,7 +135,7 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
 
 
             span {
-                color:#fc8505 ;
+                color:#d46002 ;
 
             }
 

@@ -1,0 +1,65 @@
+.banner {
+  
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    h1{
+        font-size: 2em;
+        margin-bottom: 10px;  
+        color: #000;
+        animation-name: moveToLeft;
+        animation-duration: 2s;
+    }
+
+    span {
+        font-weight: 1000;
+        color:#d46002;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 600;
+        animation-name: moveToRight;
+        animation-duration: 2s;
+    }
+
+
+}
+
+.social-media-home {
+        
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10%;
+
+    ul {
+        list-style: none;
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    
+        
+
+        li {
+            display: inline;
+            padding: 30px;
+
+            a {
+                text-decoration: none;
+                text-align: center;
+                font-size: 1.3em;
+            }
+           
+            
+
+        }
+        
+    }
+}

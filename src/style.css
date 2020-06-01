@@ -19,9 +19,11 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
   clear: both;
   /*forces the menu bellow the left floated logo*/
   max-height: 0;
-  -webkit-transition: max-height .2s ease-in-out;
-  transition: max-height .2s ease-in-out;
+  -webkit-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
   text-align: center;
+  background: #fff;
+  opacity: .9;
 }
 
 .header .nav-links .nav-link a {
@@ -125,7 +127,7 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
 }
 
 .header .logo .name-surname span {
-  color: #fc8505;
+  color: #d46002;
 }
 
 .header .logo .job-title {
@@ -163,7 +165,7 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
 }
 
 .banner h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 10px;
   color: #000;
   -webkit-animation-name: moveToLeft;
@@ -178,7 +180,7 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
 }
 
 .banner p {
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 600;
   -webkit-animation-name: moveToRight;
           animation-name: moveToRight;
@@ -186,13 +188,30 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
           animation-duration: 2s;
 }
 
-@media screen and (max-width: 767px) {
-  .banner h1 {
-    font-size: 2em;
-  }
-  .banner p {
-    font-size: 1em;
-  }
+.social-media-home {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+}
+
+.social-media-home ul {
+  list-style: none;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-media-home ul li {
+  display: inline;
+  padding: 30px;
+}
+
+.social-media-home ul li a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.3em;
 }
 
 body {
