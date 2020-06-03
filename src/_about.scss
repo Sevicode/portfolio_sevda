@@ -1,0 +1,133 @@
+/*font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
+/*
+.about-page {
+    background: url(/docs/apple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    
+}*/
+/* extra styles for header section for only about page*/
+.about-header {
+
+    /*background:#000;*/
+    opacity: .8;
+}
+
+
+
+
+/*--picture styling --*/
+
+    .my-picture {
+    
+        img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        width:200px;
+        height: auto;
+        border: solid 2px transparent; 
+        border-radius: 50%;
+    
+        }
+
+    }
+
+    /*---content section styling starts here*/
+
+    .about-text{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    text-align: left;
+    
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-size: 1.3em;
+            text-align: center;   
+        }
+
+        p {
+            font-size: .8em;
+        }
+    }
+
+
+    /*---Portfolio section styling---*/
+
+    .portfolio {
+    /*display: grid;*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0 10px;
+   
+
+         h1 {
+        font-size: 1.5em;
+        text-align: center;
+     }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1.3em;
+            text-align: left;
+            padding-left: 10px;
+
+        }
+
+        p {
+            padding: 0 10px;
+            font-size: .8em;
+            
+        }
+
+}
+
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four,
+        .project-five {
+            display: grid;
+            grid-template-rows: auto;
+            /*column-gap: 10px;*/
+            row-gap: 20px;
+            
+
+            img {
+             display: block;
+             margin: 0 auto;
+             padding: 10px 10px;
+             
+            }
+            
+    }
+
+
+
+/*-----Footer styling----*/
+    .footer {
+
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .social-media-about {
+        margin: 10% auto 10% auto;
+    }
+
+     .copyright {
+            text-align: center;
+            font-family: 'Roboto', sans-serif; 
+            font-size: .6em;
+            padding: 5px;
+            margin: 1% auto;
+                        
+        }
+

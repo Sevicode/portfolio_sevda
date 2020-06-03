@@ -2,7 +2,8 @@
 /*font-family: 'Lobster', cursive;
 font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
 .header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   /* Fix positioning anchors the icon on the top */
   width: 100%;
   z-index: 3;
@@ -19,8 +20,8 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
   clear: both;
   /*forces the menu bellow the left floated logo*/
   max-height: 0;
-  -webkit-transition: max-height .5s ease-in-out;
-  transition: max-height .5s ease-in-out;
+  -webkit-transition: max-height .2s ease-in-out;
+  transition: max-height .2s ease-in-out;
   text-align: center;
   background: #fff;
   opacity: .9;
@@ -136,6 +137,11 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
   letter-spacing: 6px;
 }
 
+.header .logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media screen and (min-width: 800px) {
   .header .nav-links {
     clear: none;
@@ -188,14 +194,13 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
           animation-duration: 2s;
 }
 
-.social-media-home {
-  position: absolute;
+.social-media {
   left: 0;
   right: 0;
   bottom: 10%;
 }
 
-.social-media-home ul {
+.social-media ul {
   list-style: none;
   padding-right: 0;
   padding-left: 0;
@@ -203,18 +208,141 @@ font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
   text-align: center;
 }
 
-.social-media-home ul li {
+.social-media ul li {
   display: inline;
   padding: 30px;
 }
 
-.social-media-home ul li a {
+.social-media ul li a {
   text-decoration: none;
   text-align: center;
   font-size: 1.3em;
 }
 
+.social-media-home {
+  position: absolute;
+}
+
+/*font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;   -------fonts using in this project*/
+/*
+.about-page {
+    background: url(/docs/apple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    
+}*/
+/* extra styles for header section for only about page*/
+.about-header {
+  /*background:#000;*/
+  opacity: .8;
+}
+
+/*--picture styling --*/
+.my-picture img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  border: solid 2px transparent;
+  border-radius: 50%;
+}
+
+/*---content section styling starts here*/
+.about-text {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.about-text h1,
+.about-text h2,
+.about-text h3,
+.about-text h4 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: .8em;
+}
+
+/*---Portfolio section styling---*/
+.portfolio {
+  /*display: grid;*/
+  font-family: 'Roboto', sans-serif;
+  margin: 0 10px;
+}
+
+.portfolio h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.portfolio h2,
+.portfolio h3,
+.portfolio h4,
+.portfolio h5,
+.portfolio h6 {
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.portfolio p {
+  padding: 0 10px;
+  font-size: .8em;
+}
+
+.project-one,
+.project-two,
+.project-three,
+.project-four,
+.project-five {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  /*column-gap: 10px;*/
+  row-gap: 20px;
+}
+
+.project-one img,
+.project-two img,
+.project-three img,
+.project-four img,
+.project-five img {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+/*-----Footer styling----*/
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.social-media-about {
+  margin: 10% auto 10% auto;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: .6em;
+  padding: 5px;
+  margin: 1% auto;
+}
+
 body {
   margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
